@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*---------variables-----*/
+:root{
+    --green-color:#7acc2d;
+    --white-color:white;
+    --black-color:#313337;
+
+/*---------tipografia*/
+--normal:12px;
+
+
+ /*-------------espaciado--- par padding-*/
+    --space:10px;
+
+ /*-------Box Shadow---*/
+--box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+/*---------variables-----*/
+
+
+html, body{
+    /* padding espaciado que tiene hacia adentro*/
+    padding: 0;
+    /* margin espaciado que el elemento tiene hacia afuera*/
+    margin:0;
+    /* tamaño de fuente*/
+    font-size: var(--normal);
+    /* tipo de fuente*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, label{
+    font-size: var(--normal);
+}
+
+
+nav{
+    /* flex ayuda a pasar los elementos de horizontal a vertical*/
+    display:flex;
+    background-color: var(--green-color);
+    /* tratar que sean universales 10 15 20 30*/
+    padding: var(--space);
+    color: var(--white-color);
+    /* justify-content:space-between se utiliza para mover imagenes y texto de izquierda a derecha */
+    justify-content:space-between;
+    /* alinea hacia el centro en forma vertical los elementos*/
+    align-items: center;
+}
+
+nav ul{
+    display:flex;
+
+}
+
+nav li{
+    /*el padding-left se utiliza para guardar el mismo tamaño en las orillas de todos los lados del nav*/
+    padding-left: 20px;
+    /* list-style:none, se utiliza para quitar viñetas al texto*/
+    list-style: none;
+}
+
+nav li a{
+    color: var(--black-color);
+    /* quita cualquier subtitulo que tenga*/
+    text-decoration: none;
+
+}
+/*feedback para cambiarle color */
+nav li a:hover{
+    color: var(--white-color);
+
+}
+
+/*----------------------------------MAIN SECTION--------------------*/
+
+.main_section{
+    padding: 15%;
+    /* para centrar el texto */
+    text-align: center;
+}
+
+.products{
+    background-image: url("../image/curve.png");
+    /*height para ver la imagen */
+    height: 95px;
+    background-repeat:no-repeat;
+    /*background-size cover ocupa el tamaño del div que tiene*/
+    background-size: cover;
+    /*manejamos la posicion con background positon para alinearlo al centro y hasta arriba */
+    background-position: center top;
+    /* aumentar o dismunir el porcentaje de los productos mientras mas padding se ponga se hacen mas pequeño*/
+    padding: 15%;
+    display: flex;
+   
+}
+.product{
+    padding: var(--space);
+    /*utilizamos margin-top para subir el elemento hacia arriba en forma negativa*/
+    margin-top: -240px;
+}
+.product .content{
+    background-color: var(--white-color);
+    padding: var(--space);
+    /*agregamos box-shadow: para agregarle sombras a los elementos;*/
+    box-shadow: var(--box-shadow);
+}
+    /* dando formato a las imagenes*/
+.img_content{
+    text-align: center;
+}
+
+.main_button{
+ background-color: var(--green-color);
+ width:100%;
+ padding: var(--space);
+ font-size: 17px;
+ color: var(--white-color);
+ border:0;
+ cursor:pointer;
+ border-radius:2px;
+}
+.main_button:hover{
+    background-color:  #5e9e22 ;
+}
+
+/*beneficio*/
+.beneficios{
+    padding: 10%;
+    display:flex;
+}
+.beneficio{
+    text-align: center;
+    padding: 20px;
+}
+.beneficio img{
+    max-height: 100px;
+}
+.text_beneficio{
+    text-align: justify;
+}
+/*mention*/
+
+h2.mention_title{
+    text-align: center;
+}
+.mentions{
+    padding:5%;
+    display: flex;
+}
+
+.mention{
+    padding: var(--space);
+}
+.mention img{
+    width:100%;
+}
+.content_mention{
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.text_mention{
+    text-align: center;
+}
+
+/*------------------------------venta-------------------*/
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    padding: var(--space);
+}
+
+
+.modulo_pago_image{
+    max-width: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+.data{
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding:var(--space);
+    color:var(--white-color)
+}
+
+.contact a{
+    color: var(--green-color);
+}
